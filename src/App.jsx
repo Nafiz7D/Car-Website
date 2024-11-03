@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import About from "./components/About/About";
 
 const App = () => {
   // Dark Mode Feature
@@ -38,6 +39,7 @@ const App = () => {
       </Navbar>
       <Hero theme={theme}>
       </Hero>
+      <About></About>
     </div>
   );
 };
