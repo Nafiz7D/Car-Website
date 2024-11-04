@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
 
 const NavLinks = [
@@ -26,14 +26,14 @@ const NavLinks = [
 
 const Navbar = ({ theme, setTheme }) => {
   return (
-    <nav className="shadow-md bg-white dark:bg-dark dark:text-white duration-300">
+    <nav className="shadow-md bg-white dark:bg-dark dark:text-white duration-300 relative z-40">
       <div className="container">
         <div className="flex justify-between items-center">
           <div>
             <h1 className="text-3xl font-bold font-serif">Car Rental</h1>
           </div>
           <div className="hidden md:block">
-            <ul className="flex items-center gap-8">
+            <ul className={`flex  items-center gap-8`}>
               {NavLinks.map((data) => (
                 <li className="py-4" key={data.id}>
                   <a
