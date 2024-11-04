@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
+import CarList from "./components/CarList/CarList";
 
 const App = () => {
   // Dark Mode Feature
@@ -42,6 +43,7 @@ const App = () => {
       </Hero>
       <About></About>
       <Services></Services>
+      <CarList></CarList>
     </div>
   );
 };
