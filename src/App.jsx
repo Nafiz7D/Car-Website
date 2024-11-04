@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import CarList from "./components/CarList/CarList";
 import Testimonial from "./components/Testimonial/Testimonial";
+import AppStoreBanner from "./components/AppStoreBanner/AppStoreBanner";
 
 const App = () => {
   // Dark Mode Feature
@@ -37,7 +38,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-white dark:bg-black dark:text-white">
       <Navbar theme={theme} setTheme={setTheme}>   
       </Navbar>
       <Hero theme={theme}>
@@ -46,6 +47,7 @@ const App = () => {
       <Services></Services>
       <CarList></CarList>
       <Testimonial></Testimonial>
+      <AppStoreBanner></AppStoreBanner>
     </div>
   );
 };
